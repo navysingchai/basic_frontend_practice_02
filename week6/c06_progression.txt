@@ -1,0 +1,5 @@
+week 06 : ทำโจทย์จากในคาบ เป็นการทำ function เพิ่ม ลบ แก้ไข แสดง ข้อมูล array ของ quotes 
+    - addQuote ก็จะเพิ่ม data เข้าไป โดยใช้ .length เป็นการเพิ่ม
+    - deleteQuote จะ loop หา ด้วย for และใช้ splice ตัด
+    - updateQuote ซึ่งรับ id และ ข้อมูลเข้ามา ก็จะทำการ วน for หา และถ้าเจอ id ที่ตรงกันก็จะ update ตัวปัจจุบัน = ตัวใหม่ที่เข้ามา
+    - getAllQuotes ก็จะทำการ return quotes ตรง ๆ ไปเลย
