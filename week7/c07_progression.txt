@@ -1,0 +1,6 @@
+week 07 : ทำ function สร้าง element โดยได้แรงบันดารใจจากในคาบ
+    จากในคาบที่ได้ทำ พบว่าการสร้าง html โดย javascript เป็นอะไรที่ยุ่งยากมาก ต้องเขียนโค้ดหลายบรรทัด 
+    ผมก็เลย พยายามสร้าง function createElement ขึ้นมา โดยจะรับ parameter มา 2 ตัว
+    ตัวแรกคือ tag ที่ต้องการสร้าง
+    ตัวที่สองคือ option เช่น text, class, และพวก attribute ต่าง ๆ ซึ่งพวก attribute มันมีหลายอย่าง เลยมีการรับแบบ object โดย key คือชื่อ attribute
+    และ value คือ ค่า 
