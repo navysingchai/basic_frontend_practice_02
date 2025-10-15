@@ -1,0 +1,7 @@
+week 08 : ทำ self practice ที่อาจารย์ให้ทำในคาบ 'self_practice_lesson2_dom-Student'
+    - โดยใน ไฟล์ self_practice_lesson2_dom-Student/starter/ui.js จะมี quoteList ที่เข้าถึง element id quote-list
+    - ซึ่ง function renderQuotes() จะทำให้ textContent ของ quoteList เป็นค่าว่างก่อน แล้วค่อย append tag p โดย p แต่ละตัว
+    ที่ใส่เข้าไป จะผ่านการ foreach ของตัวแปร quotes ก่อน เพื่อดึงเนื้อหามา
+    - และเนื่องจาก ไม่สามารถใช้ import ได้ (ไม่มั่นใจว่าเป็นเพราะการ run file ตรง ๆ โดยไม่ผ่าน live server หรือป่าว) เลยแก้ปัญหาโดยการ copy code
+    function addQuote จากไฟล์ quote.js มาใช้ และก่อนทำการ
+    - จากนั้นพอ functino เขียนเสร็จ ก็ได้ทำการใช้ addQuote() เพื่อให้มีข้อมูล และเรียกใช้ renderQuotes()

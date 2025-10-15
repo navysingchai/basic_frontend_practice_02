@@ -1,0 +1,21 @@
+week 09 : 
+
+Practice-Chapter6 : 01
+    - แทนที่จะเขียนโค้ดซ้ำ ๆ เพื่อเปลี่ยนข้อความและสี ผมเลยตัดสินใจสร้าง setFormLabel ทีนี้เวลาจะแก้ข้อความก็แค่เรียกใช้ แล้วส่งข้อความกับสีที่ต้องการเข้าไป 
+    - เรื่องจองการ validate แทนที่จะเช็กทีละช่อง ผมก็ใช้วิธีวนลูปผ่าน input ทุกตัวแล้วเช็กทีเดียวเลยว่า input.value.trim().length === 0 หรือเปล่า
+    ถ้าไม่ผ่าน: ผมก็บอกให้ setFormLabel แสดงข้อความ สีแดง แล้วหยุดทำงานทันทีเลย
+    ถ้าผ่านหมด: ทุกอย่างเรียบร้อยดี ผมก็ให้ setFormLabel แสดงข้อความ สีเขียว เพื่อบอกผู้ใช้ว่า "your data completed"
+
+Practice-Chapter6 : 02
+    - ตอนแรกผมเอา keyInput, keyLog จาก id มาก่อน
+    - แล้วสร้าง tag p และก็ใส่ You pressed: ${e.key} เป็น textContent
+    - จากนั้น ทำการ set style msg.style.color ว่า e.key === 'Enter' ไหม ถ้าใช่เป็นสีน้ำเงิน ถ้าไม่ใช่เป็นสีดำ
+    - และก็ทำการ appendChild()
+
+lesson3_events_Student/starter :
+    - เริ่มจาก Import function เข้ามาใช้งาน : import { addQuote, deleteQuote, getAllQuotes } from './quote.js'
+    - เลือก DOM Elements ครั้งเดียว :
+        แทนที่จะใช้ document.getElementById() หลายๆ ครั้ง ผมสร้าง Object needsElement เพื่อเก็บชื่อ key และ id ของ element ที่ต้องการทั้งหมด
+        จากนั้นใช้ Object.entries() กับ reduce() เพื่อวนลูปสร้าง Object ui ที่เก็บ Element ทั้งหมดไว้ในที่เดียว ทำให้เรียกใช้งานง่ายมากกก เช่น ui.form, ui.quoteList
+    - ส่วนที่เหลือที่เป็นการ add, delete ก็ใช้ function จากใน quote.js เอามาใช้ร่วมกับการ query node
+    - ส่วนของการ random ที่เป็น Math.cell ผมใช้ chat gpt เพราะคิด logic ไม่ออกครับ
